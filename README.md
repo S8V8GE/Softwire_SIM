@@ -12,13 +12,13 @@
 
 Softwire_SIM is a PowerShell-based tool that simulates real-world door activity within a Softwire environment.
 
-It allows you to generate controlled access control events without requiring physical interaction with hardware.
+It allows you to both generate controlled and simulate random access control events without requiring physical interaction with hardware.
 
 ---
 
 ## ⚙️ Features
 
-- 🔁 Automated door activity simulation  
+- 🔁 Automated door activity simulation 
 - 🎯 Configurable event types (Normal / Forced / Held)  
 - ⏱️ Adjustable timing between events  
 - 🚪 Intelligent door selection & filtering  
