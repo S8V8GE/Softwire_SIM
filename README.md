@@ -14,7 +14,7 @@ Softwire_SIM is a PowerShell-based tool that simulates real-world door activity 
 
 It allows you to both generate controlled and simulate random access control events without requiring physical interaction with hardware.
 
-The `Alpha` release will be wrapped in an interactive GUI and replace `SimNG` in EMEA STC-001 and STC-002 trainings.
+The `Alpha` release will be wrapped in an interactive GUI and replace `SimNG` (which is essentially an event generator) in EMEA STC-001 and STC-002 trainings.
 
 ---
 
@@ -110,8 +110,8 @@ Import-Module SoftwirePSM
   - Hard / Hard + Strict ✔  
   - Presence timeout ✔  
   - Bypass antipassback ✔  
-  - ⚠️ Only works properly on perimeter doors  
-  - ✅ *Forgive antipassback violation now works*
+  - ⚠️ Only works on perimeter doors  
+  - ✅ *Forgive antipassback violation works*
 
 - **Max Occupancy**
   - Soft ✔  
@@ -130,7 +130,7 @@ Import-Module SoftwirePSM
 - **Visitor Escort**
   - Standard escort ✔  
   - Single passage ✔  
-  *(Remove OUT reader as per technote)*
+  *(Remember to remove OUT reader as per technote)*
 
 - **Duress PIN** ✔  
 
@@ -148,7 +148,7 @@ Import-Module SoftwirePSM
 ## ❌ Limitations
 
 - **Entry Sensor**
-  - "No entry detected" event could not be triggered
+  - "No entry detected" event will not trigger
 
 - **Lock Sensor**
   - Not supported (not exposed via Softwire API)
